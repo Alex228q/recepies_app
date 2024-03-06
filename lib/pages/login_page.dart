@@ -109,6 +109,8 @@ class _LoginPageState extends State<LoginPage> {
             _loginFormKey.currentState?.save();
 
             bool result = await AuthService().login(username!, password!);
+
+            print(result);
           }
         },
         child: Text(
